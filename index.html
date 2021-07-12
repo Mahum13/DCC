@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
+    <title>Dynamic Communications</title>
+
+    <div class="logo"></div>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="a" href="#">Home</a>
+      <p> | </p>
+      <a class="a" href="#">About Us</a>
+      <p> | </p>
+      <a class="a" href="#">Our Team</a>
+      <p> | </p>
+      <a class="a" href="#">Our Training</a>
+      <p> | </p>
+      <a class="a" href="#">Events</a>
+      <p> | </p>
+      <a class="a" href="#">Contact Us</a>
+    </div>
+    <!-- NAVBAR ENDS -->
+  </head>
+
+  <body>
+    <div class="graphics1">
+      <!-- <img src="images/main_images/graphics1.jpg"> -->
+    </div>
+    <div class="tagline">CREATING EXCELLENCE THROUGH TRANSFORMATION</div>
+
+    <!-- NLP SECTION -->
+    <div class="nlp-container">
+      <div class="nlp-intro fade">NLP intro phrase 1</div>
+      <div class="nlp-intro fade">NLP phrase 2</div>
+
+      <div style="text-align:center; padding-top: 100px; padding-bottom: 10px;">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <!-- <span class="dot"></span> -->
+      </div>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+    </script>
+
+    <div class="nlp-help-container">
+      <h1>How practicing NLP can help you...</h1>
+      <h2>...as an individual</h2>
+      <div class="nlp-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac turpis placerat, tristique ante eu, aliquam neque. In blandit diam est, ac aliquet nunc pharetra eget. Vivamus et purus eget arcu imperdiet efficitur in nec libero.
+        Suspendisse aliquam quam vel iaculis vestibulum. Vivamus facilisis ligula quis lorem rutrum, a dignissim purus vulputate. Curabitur vel laoreet ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </div>
+      <h2>...as an organisation</h2>
+      <div class="nlp-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac turpis placerat, tristique ante eu, aliquam neque. In blandit diam est, ac aliquet nunc pharetra eget. Vivamus et purus eget arcu imperdiet efficitur in nec libero.
+        Suspendisse aliquam quam vel iaculis vestibulum. Vivamus facilisis ligula quis lorem rutrum, a dignissim purus vulputate. Curabitur vel laoreet ligula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      </div>
+    </div>
+    <!-- NLP SECTION ENDS -->
+
+    <!-- TRAINING SECTION -->
+    <!-- <div class="training">
+      <h3>OUR TRAININGS</h3>
+    </div> -->
+    <div class="training-container">
+      <div class="row">
+        <div class="column">
+          <div class="rectDiv">
+            <img src="./images/main_images/accredited-training.jpg" style="z-index: -1; position: relative; width: 933px; height: 700px; right: 200px; opacity: 0.8">
+            <div class="headline">ACCREDITED TRAININGS</div>
+            <button class="training-redirect">Learn More</button>
+          </div>
+        </div>
+        <div class="column">
+          <div class="rectDiv">
+            <img src="./images/main_images/workshops.jpg" style="z-index: -1; position: relative; width: 1230px; height: 700px; right: 560px; bottom: 40px; opacity: 0.8">
+            <div class="headline" style="bottom: 680px;">WORKSHOPS</div>
+            <button class="training-redirect">Learn More</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="rectDiv">
+            <img src="./images/main_images/corporate.jpg" style="z-index: -1; position: relative; width: 933px; height: 700px; right: 150px; opacity: 0.8">
+            <div class="headline" style="bottom: 690px; font-size: 2.3vw">CORPORATE DEVELOPMENT</div>
+            <button class="training-redirect">Learn More</button>
+          </div>
+        </div>
+        <div class="column">
+          <div class="rectDiv">
+            <img src="./images/main_images/transformational-coaching.jpg" style="position: relative;width: 933px; height: 700px; right: 210px; bottom: 30px; opacity: 0.8 ">
+            <div class="headline" style="max-width: 450px; bottom: 680px; font-size: 2.3vw;">TRANSFORMATIONAL COACHING</div>
+            <button class="training-redirect">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- COURSES SECTION ENDS -->
+
+    <!-- PARTNERS SECTION -->
+
+    <div class="partners-container">
+      <div class="row1">
+        <img class="img" src="./images/main_images/apag.jpeg" onclick="partnersModal(0)">
+        <img class="img" src="./images/main_images/unilever.png" onclick="partnersModal(1)" style="max-width: 190px;">
+        <img class="img" src="./images/main_images/bayer.png" onclick="partnersModal(2)" style="max-width: 211px;">
+        <img class="img" src="./images/main_images/nbp.png" onclick="partnersModal(3)" style="max-width: 585px; margin-right: 0">
+      </div>
+      <div class="row2">
+        <img class="img" src="./images/main_images/nab.png" onclick="partnersModal(4)" style="max-height: 150px; max-width: 379px; padding-bottom: 50px; ">
+        <img class="img" src="./images/main_images/alson.jpeg" onclick="partnersModal(5)" style="max-width: 211px; ">
+        <img class="img" src="./images/main_images/dame.png" onclick="partnersModal(6)" style="max-width: 211px; margin-right: 0">
+      </div>
+    </div>
+    <div id="myModal0" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="partner-modal">
+          <div class="partner-img"><img src="./images/main_images/apag.jpeg" style="height: 180px; width: 203px;"></div>
+          <div class="partner-text">Leadership coaching for directors of family business. Assisting current CEO to develop his skills and self confidence to take on the top leadership role. Assisting in the transition from traditional, opaque, family run business to a transparent professional business, which has enabled growth and further investment into the business and setting
+            up a new branch to the business. Ongoing monthly one-on-one coaching.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal1" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="partner-modal">
+          <div class="partner-img"><img src="./images/main_images/unilever.png" style="position: relative; height: 158px; width: 142px; top: 20px; left: 5px;"></div>
+          <div class="partner-text">Facilitating an 8 month pioneering program to assist 50+ young women to develop the self-confidence and mindset to step into leadership roles, either in the corporate/social sectors or with starting their own business.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal2" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="partner-modal">
+          <div class="partner-img"><img src="./images/main_images/bayer.png" style="position: relative; height: 198px; width: 198px;"></div>
+          <div class="partner-text">Leadership coaching and development for a manager with poor leadership skills with many complaints from within his departmment. Assisted him to understand the role of leadership and EQ, develop a more functional leadership style congruent with him as well as needs
+          of the organisation, how to influence his team and create buy-in from them. Helped him develop a greater cohhesive team culture. </div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal3" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="partner-modal">
+          <div class="partner-img"><img src="./images/main_images/nbp.png" style="position: relative;height: 150px; width: 416px; top: 25px; right: 16px;"></div>
+          <div class="partner-text">One-day leadership workshop for senior leadership and HODs.</div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal4" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="partner-modal">
+          <div class="partner-img"><img src="./images/main_images/nab.png" style="position: relative; height: 202px; width: 510px; bottom: 2px; right: 10px;"></div>
+          <div class="partner-text">2-day off-ste for senior leaders, followed by 12-month coaching program to enhance their leadership skills, manage personal stress and team stress during period of transition.</div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal5" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="partner-modal">
+          <div class="partner-img"><img src="./images/main_images/alson.jpeg" style="position: relative; right: 8px;"></div>
+          <div class="partner-text">Half-day workshop on understanding and creating corporate culture to reflect the values and goals of the organisation.</div>
+        </div>
+      </div>
+    </div>
+    <div id="myModal6" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="partner-modal">
+          <div class="partner-img"><img src="./images/main_images/dame.png" style="position: relative; width: 200px; height: 200px;"></div>
+          <div class="partner-text">Assisted owner of a high-end salon to transition from a highly experienced and celebrated haridresser into an entrepreneur. Enaled her to step back from cutting hair by enabling
+          her team to step in more. And assisted her to open new branches and move into further business development and enhancement.</div>
+        </div>
+      </div>
+    </div>
+    <!-- PARTNERS SECTION ENDS -->
+    <div class="team">
+      <h4>Our Team</h4>
+      <div class="team-container">
+        <div class="smallGrid">
+          <div class="circular">TEAM MEMBER 1</div>
+          <div class="gridTag">Full Name
+            <br>
+            Position
+          </div>
+        </div>
+        <div class="smallGrid">
+          <div class="circular">TEAM MEMBER 2</div>
+          <div class="gridTag">Full Name
+            <br>
+            Position</div>
+        </div>
+        <div class="smallGrid">
+          <div class="circular">TEAM MEMBER 3</div>
+          <div class="gridTag">Full Name
+            <br>
+            Position</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIALS SECTION -->
+    <!-- <div class="testimonial-banner">
+      <h1 style="margin-left: 100px;font-style: italic">"This is a testimonial"</h1>
+      <h2 style="margin-left: 600px; margin-right: 30px;">-Full Name</h2>
+    </div> -->
+    <h4 style="text-align: center">What our clients are saying</h4>
+    <div class="testimonial-container">
+      <video class="vidSlides" controls>
+        <source src="./images/main_images/testimonial1.mp4" type="video/mp4">
+      </video>
+      <video class="vidSlides" controls style="display: none;">
+        <source src="./images/main_images/testimonial2.mp4" type="video/mp4">
+      </video>
+      <video class="vidSlides" controls style="display: none;">
+        <source src="./images/main_images/testimonial3.mp4" type="video/mp4">
+      </video>
+
+      <div class="nav-row">
+        <div class="nav-col">
+          <img class="demo" src="./images/main_images/testimonial1-img.png" style="width: auto; height: inherit;" onclick="currentDiv(1)">
+        </div>
+        <div class="nav-col">
+          <img class="demo" src="./images/main_images/testimonial2-img.png" style="width: auto; height: inherit;" onclick="currentDiv(2)">
+        </div>
+        <div class="nav-col">
+          <img class="demo" src="./images/main_images/testimonial3-img.png" style="width: auto; height: inherit;" onclick="currentDiv(3)">
+        </div>
+      </div>
+    </div>
+    <button id="to-media" class="media-btn" >View more...</buttom>
+    <script>
+      document.getElementById('to-media').onclick = function() {
+        location.href = "media.html";
+      }
+    </script>
+    <!-- TESTIMONIALS SECTION ENDS -->
+  </body>
+
+</html>
