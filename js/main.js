@@ -1,3 +1,37 @@
+function adjustOnload() {
+  if (window.innerWidth < 982) {
+    $('.openSidenav').css('display', 'block');
+    $('.navbar').css('display', 'none');
+  } else {
+    $('.navbar').css('display', 'inline-block');
+    $('.openSidenav').css('display', 'none');
+  }
+}
+
+function openNav() {
+  document.getElementById("sidenavbar").style.width = "75%";
+}
+
+function closeNav() {
+  document.getElementById("sidenavbar").style.width = "0";
+}
+
+function resizeNavbar() {
+  window.onresize = function() {
+    if (window.innerWidth < 982) {
+      $('.navbar').css('display', 'none');
+      $('.openSidenav').css('display', 'block');
+
+    } else {
+      $('.navbar').css('display', 'inline-block');
+      $('.openSidenav').css('display', 'none');
+
+    }
+  }
+}
+
+
+
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("nlp-intro");
@@ -15,21 +49,6 @@ function showSlides() {
   setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
 
-
-// function plusDivs(n) {
-//     partnersSlides(slideIndex += n);
-// }
-//
-// function partnersSlides(n) {
-//   var i;
-//   var x = document.getElementsByClassName("partners-slides");
-//   if (n > x.length) { slideIndex = 1 }
-//   if (n < 1) { slideIndex = x.length }
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//   }
-//   x[slideIndex-1].style.display = "block";
-// }
 
 
 function partnersModal(n) {
