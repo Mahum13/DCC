@@ -1,0 +1,266 @@
+body, html {
+  width: 100%;
+  margin: auto;
+
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Quicksand-SemiBold";
+  src: url('./fonts/Quicksand/static/Quicksand-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url('./fonts/Quicksand/static/Quicksand-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Quicksand-Medium";
+  src: url('./fonts/Quicksand/static/Quicksand-Medium.ttf');
+}
+
+@font-face {
+  font-family: "Quicksand-Light";
+  src: url('./fonts/Quicksand/static/Quicksand-Light.ttf');
+}
+
+.logo {
+  width: 250px;
+  height: 144px;
+  background-image: url('../images/main_images/logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  float: left;
+  margin: 20px;
+}
+
+.navbar {
+  float: right;
+  display: inline-block;
+  min-width: 200px;
+  height: 30px;
+  margin: 50px;
+}
+
+.a {
+  font-family: "Quicksand-Regular";
+  text-decoration: none;
+  color: #6D6875;
+  font-size: 1.2vw;
+  color: #44100A;
+
+}
+
+p {
+  display: inline;
+  margin: 6px;
+  position: relative;
+  font-family: "Quicksand-SemiBold";
+  font-size: 1.2vw;
+  color: #6D6875;
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(54, 0, 21, 0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  opacity: 100%;
+  padding: 8px 10px 8px 8px;
+  margin: 12px 30px 12px 12px;
+  text-decoration: none;
+  font-size: 38px;
+  color: white;
+  font-family: "Quicksand-Regular";
+  display: block;
+  transition: 0.3s;
+  line-height: 65px;
+  cursor: pointer;
+  outline: none;
+}
+
+.p1 {
+  font-family: "Quicksand-Light";
+  font-size: 17px;
+  color: #f0d8dc;
+  padding: 8px 10px 8px 8px;
+  margin: 10px 30px 12px 12px;
+  line-height: 5px;
+}
+
+.sidenav-contact a {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.sidenav a:hover{
+  color: #b5838d;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 45px;
+  margin-left:  50px;
+}
+
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.header {
+  position: relative;
+  max-width: 100%;
+  min-height: 700px;
+  z-index: -100;
+  background-color: #efedf2;
+  padding: 60px 150px 20px 150px;
+}
+
+.header img {
+  width: 400px;
+  height: 230px;
+  float: left;
+  z-index: 100;
+  position: relative;
+  margin: 200px 20px 40px 0px;
+}
+
+.quote-container {
+  max-width: 100%;
+  position: relative;
+  margin: 200px 150px 200px 10px;
+}
+
+h1 {
+  font-family: Futura;
+  font-weight: lighter;
+  font-size: 50px;
+  color: #1c3144;
+  text-align: right;
+  line-height: 80px;
+}
+
+.intro-container {
+  max-width: 100%;
+  min-height: 400px;
+  padding: 50px 150px 20px 150px;
+}
+
+h2, p {
+  display: inline;
+}
+
+h2 {
+  font-family: "Quicksand-Medium";
+  font-size: 37px;
+  letter-spacing: 3px;
+  color: #b5838d;
+}
+
+p {
+  font-family: "Quicksand-Regular";
+  font-size: 26px;
+  color: #1c3144;
+}
+
+.intro-img {
+  max-width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.imgbreak {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.imgbreak img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 620px;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  z-index: -100;
+}
+
+h3 {
+  background-color: rgba(175, 115, 116, 0.8);
+  font-family: Futura;
+  font-weight: 100;
+  border-radius: 3px;
+  color: white;
+  font-size: 3vw;
+  width: 500px;
+  z-index: 300;
+  position: relative;
+  left: 200px;
+  top: 160px;
+}
+
+ul {
+  text-align: left;
+  font-size: 20px;
+  font-family: "Quicksand-Regular";
+  color: #1c3144;
+}
+
+.aliyah-container {
+  position: relative;
+  display: inline-block;
+  background-color: #efedf2;
+  width: 100%;
+  min-height: 300px;
+  font-family: "Quicksand-Regular";
+  font-size: 20px;
+  color: #1c3144;
+  padding-top: 50px;
+}
+
+.aliyah-text {
+  max-width: 100%;
+  min-height: 500px;
+  position: relative;
+  padding-right: 150px;
+  padding-left: 150px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+
+h4 {
+  font-family: "Quicksand-Regular";
+  font-size: 40px;
+  color: #1c3144;
+  margin: 0px;
+}
+
+h5 {
+  margin: 0px 0px 20px 0px;
+  font-family: "Quicksand-Regular";
+  font-size: 20px;
+  color: #1c3144;
+  font-style: italic;
+}
