@@ -8,47 +8,62 @@
     <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
     <title>Dynamic Communications</title>
 
-    <div class="logo"></div>
+    <a href="index.html"><div class="logo"></div></a>
 
     <!-- NAVBAR -->
     <div class="navbar">
-      <a class="a" href="#">Home</a>
+      <a class="a" href="index.html">Home</a>
       <p> | </p>
-      <a class="a" href="#">About Us</a>
+      <a class="a" href="about-us.html">About Us</a>
       <p> | </p>
-      <a class="a" href="#">Our Team</a>
+      <a class="a" href="#team">Our Team</a>
       <p> | </p>
-      <a class="a" href="#">Our Training</a>
+      <a class="a" href="#trainings">Our Training</a>
       <p> | </p>
-      <a class="a" href="#">Events</a>
+      <a class="a" href="gallery.html">Gallery</a>
       <p> | </p>
       <a class="a" href="#">Contact Us</a>
     </div>
     <!-- NAVBAR ENDS -->
+    <!-- SIDE NAV -->
+    <div id="sidenavbar" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <div style="position: relative; left: 10%; right: 10% ;height: 1px; width: 79%; background-color: white;"></div>
+      <a href="about-us.html">About Us</a>
+      <div style="position: relative; left: 10%; right: 10% ;height: 1px; width: 79%; background-color: white;"></div>
+      <a href="index.html#team">Our Team</a>
+      <div style="position: relative; left: 10%; right: 10% ;height: 1px; width: 79%; background-color: white;"></div>
+      <a href="index.html#trainings">Our Trainings</a>
+      <div style="position: relative; left: 10%; right: 10% ;height: 1px; width: 79%; background-color: white;"></div>
+      <a href="gallery.html">Gallery</a>
+      <div style="position: relative; left: 10%; right: 10% ;height: 1px; width: 79%; background-color: white;"></div>
+      <a href="#" style="margin-bottom: 0px;">Contact Us</a>
+      <div class="sidenav-contact">
+        <div class="p1">+92 333 328 3289</div>
+        <div class="p1" style="margin-bottom: 18px;">admin@dynamiccommunications.com.au</div>
+        <a href="https://www.facebook.com/dynamiccommunicationsconsulting" target="_blank"><img src="./images/accredited_images/icons/facebook.png" style="height: 30px; width: 30px; margin-right: 10px;"></a>
+        <a href="https://www.linkedin.com/in/aliyahdynamiccommunications/?originalSubdomain=pk" target="_blank"><img src="./images/accredited_images/icons/linkedin.png" style="height: 30px; width: 30px; margin-right: 10px;"></a>
+        <a href="https://twitter.com/dynamiccommunic" target="_blank"><img src="./images/accredited_images/icons/twitter.png" style="height: 30px; width: 30px; margin-right: 10px"></a>
+      </div>
+    </div>
+    <div class="openSidenav" style="display: none; position: absolute; float: right; right: 55px; top: 30px; font-size: 50px; color: #44100A; cursor: pointer;" onclick="openNav()">&#9776;</div>
+    <script>
+      window.addEventListener("resize", resizeNavbar);
+      window.onload = adjustOnload();
+    </script>
+    <!-- SIDE NAV ENDS -->
   </head>
 
   <body>
-    <div class="graphics1">
-      <!-- <img src="images/main_images/graphics1.jpg"> -->
-    </div>
+    <div class="graphics1"></div>
     <div class="tagline">CREATING EXCELLENCE THROUGH TRANSFORMATION</div>
+    <div class="intro-quote-container">
+      <div class="intro-quote">"The difference between realistic goals and unrealistic goals are your limiting beliefs"</div>
+      <div class="intro-quote-author">-Aliyah Mohyeddin</div>
+    </div>
 
     <!-- NLP SECTION -->
-    <div class="nlp-container">
-      <div class="nlp-intro fade">NLP intro phrase 1</div>
-      <div class="nlp-intro fade">NLP phrase 2</div>
-
-      <div style="text-align:center; padding-top: 100px; padding-bottom: 10px;">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <!-- <span class="dot"></span> -->
-      </div>
-    </div>
-    <script>
-      var slideIndex = 0;
-      showSlides();
-    </script>
-
     <div class="nlp-help-container">
       <h1>How practicing NLP can help you...</h1>
       <h2>...as an individual</h2>
@@ -63,168 +78,206 @@
     <!-- NLP SECTION ENDS -->
 
     <!-- TRAINING SECTION -->
-    <!-- <div class="training">
-      <h3>OUR TRAININGS</h3>
-    </div> -->
-    <div class="training-container">
+    <div id="trainings" class="training-container">
       <div class="row">
         <div class="column">
           <div class="rectDiv">
-            <img src="./images/main_images/accredited-training.jpg" style="z-index: -1; position: relative; width: 933px; height: 700px; right: 200px; opacity: 0.8">
+            <img src="./images/main_images/accredited-training.jpg" style="z-index: 1; position: relative; width: 933px; height: 700px; right: 200px; opacity: 0.8">
             <div class="headline">ACCREDITED TRAININGS</div>
-            <button class="training-redirect">Learn More</button>
+            <a class="training-redirect" href="accredited-training.html">Learn More</a>
           </div>
         </div>
         <div class="column">
           <div class="rectDiv">
-            <img src="./images/main_images/workshops.jpg" style="z-index: -1; position: relative; width: 1230px; height: 700px; right: 560px; bottom: 40px; opacity: 0.8">
+            <img src="./images/main_images/workshops.jpg" style="z-index: 1; position: relative; width: 1230px; height: 700px; right: 560px; bottom: 40px; opacity: 0.8">
             <div class="headline" style="bottom: 680px;">WORKSHOPS</div>
-            <button class="training-redirect">Learn More</button>
+            <a class="training-redirect" href="workshops.html">Learn More</a>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="column">
           <div class="rectDiv">
-            <img src="./images/main_images/corporate.jpg" style="z-index: -1; position: relative; width: 933px; height: 700px; right: 150px; opacity: 0.8">
-            <div class="headline" style="bottom: 690px; font-size: 2.3vw">CORPORATE DEVELOPMENT</div>
-            <button class="training-redirect">Learn More</button>
+            <img src="./images/main_images/corporate.jpg" style="z-index: 1; position: relative; width: 933px; height: 700px; right: 150px; opacity: 0.8">
+            <div class="headline" style="bottom: 690px;">CORPORATE DEVELOPMENT</div>
+            <a class="training-redirect" href="#">Learn More</a>
           </div>
         </div>
         <div class="column">
           <div class="rectDiv">
             <img src="./images/main_images/transformational-coaching.jpg" style="position: relative;width: 933px; height: 700px; right: 210px; bottom: 30px; opacity: 0.8 ">
-            <div class="headline" style="max-width: 450px; bottom: 680px; font-size: 2.3vw;">TRANSFORMATIONAL COACHING</div>
-            <button class="training-redirect">Learn More</button>
+            <div class="headline" style="max-width: 450px; bottom: 680px;">TRANSFORMATIONAL COACHING</div>
+            <a class="training-redirect" href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="rectDiv">
+            <img src="./images/main_images/accredited-training.jpg" style="position: relative; width: 933px; height: 700px; right: 200px; opacity: 0.8">
+            <div class="headline" style="bottom: 690px;">RETREATS</div>
+            <a class="training-redirect" href="#">Learn More</a>
           </div>
         </div>
       </div>
     </div>
     <!-- COURSES SECTION ENDS -->
-
-    <!-- PARTNERS SECTION -->
-
-    <div class="partners-container">
-      <div class="row1">
-        <img class="img" src="./images/main_images/apag.jpeg" onclick="partnersModal(0)">
-        <img class="img" src="./images/main_images/unilever.png" onclick="partnersModal(1)" style="max-width: 190px;">
-        <img class="img" src="./images/main_images/bayer.png" onclick="partnersModal(2)" style="max-width: 211px;">
-        <img class="img" src="./images/main_images/nbp.png" onclick="partnersModal(3)" style="max-width: 585px; margin-right: 0">
-      </div>
-      <div class="row2">
-        <img class="img" src="./images/main_images/nab.png" onclick="partnersModal(4)" style="max-height: 150px; max-width: 379px; padding-bottom: 50px; ">
-        <img class="img" src="./images/main_images/alson.jpeg" onclick="partnersModal(5)" style="max-width: 211px; ">
-        <img class="img" src="./images/main_images/dame.png" onclick="partnersModal(6)" style="max-width: 211px; margin-right: 0">
-      </div>
-    </div>
-    <div id="myModal0" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="partner-modal">
-          <div class="partner-img"><img src="./images/main_images/apag.jpeg" style="height: 180px; width: 203px;"></div>
-          <div class="partner-text">Leadership coaching for directors of family business. Assisting current CEO to develop his skills and self confidence to take on the top leadership role. Assisting in the transition from traditional, opaque, family run business to a transparent professional business, which has enabled growth and further investment into the business and setting
-            up a new branch to the business. Ongoing monthly one-on-one coaching.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="myModal1" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="partner-modal">
-          <div class="partner-img"><img src="./images/main_images/unilever.png" style="position: relative; height: 158px; width: 142px; top: 20px; left: 5px;"></div>
-          <div class="partner-text">Facilitating an 8 month pioneering program to assist 50+ young women to develop the self-confidence and mindset to step into leadership roles, either in the corporate/social sectors or with starting their own business.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="myModal2" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="partner-modal">
-          <div class="partner-img"><img src="./images/main_images/bayer.png" style="position: relative; height: 198px; width: 198px;"></div>
-          <div class="partner-text">Leadership coaching and development for a manager with poor leadership skills with many complaints from within his departmment. Assisted him to understand the role of leadership and EQ, develop a more functional leadership style congruent with him as well as needs
-          of the organisation, how to influence his team and create buy-in from them. Helped him develop a greater cohhesive team culture. </div>
-        </div>
-      </div>
-    </div>
-    <div id="myModal3" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="partner-modal">
-          <div class="partner-img"><img src="./images/main_images/nbp.png" style="position: relative;height: 150px; width: 416px; top: 25px; right: 16px;"></div>
-          <div class="partner-text">One-day leadership workshop for senior leadership and HODs.</div>
-        </div>
-      </div>
-    </div>
-    <div id="myModal4" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="partner-modal">
-          <div class="partner-img"><img src="./images/main_images/nab.png" style="position: relative; height: 202px; width: 510px; bottom: 2px; right: 10px;"></div>
-          <div class="partner-text">2-day off-ste for senior leaders, followed by 12-month coaching program to enhance their leadership skills, manage personal stress and team stress during period of transition.</div>
-        </div>
-      </div>
-    </div>
-    <div id="myModal5" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="partner-modal">
-          <div class="partner-img"><img src="./images/main_images/alson.jpeg" style="position: relative; right: 8px;"></div>
-          <div class="partner-text">Half-day workshop on understanding and creating corporate culture to reflect the values and goals of the organisation.</div>
-        </div>
-      </div>
-    </div>
-    <div id="myModal6" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="partner-modal">
-          <div class="partner-img"><img src="./images/main_images/dame.png" style="position: relative; width: 200px; height: 200px;"></div>
-          <div class="partner-text">Assisted owner of a high-end salon to transition from a highly experienced and celebrated haridresser into an entrepreneur. Enaled her to step back from cutting hair by enabling
-          her team to step in more. And assisted her to open new branches and move into further business development and enhancement.</div>
-        </div>
-      </div>
-    </div>
-    <!-- PARTNERS SECTION ENDS -->
-    <div class="team">
+    <!-- OUR TEAM SECTION -->
+    <div id="team" class="team">
       <h4>Our Team</h4>
       <div class="team-container">
         <div class="smallGrid">
-          <div class="circular">TEAM MEMBER 1</div>
-          <div class="gridTag">Full Name
-            <br>
-            Position
+          <div class="circular">
+            <img src="./images/main_images/sadia-haq.jpeg" onclick="partnersModal(0)" style="bottom: 50px;">
+          </div>
+          <div class="gridTag">Dr. Sadia Haq</div>
+        </div>
+        <div class="smallGrid">
+          <div class="circular">
+            <img src="./images/main_images/ambreen-khalid.jpeg" onclick="partnersModal(1)" style="height: 433px; bottom: 110px;">
+          </div>
+          <div class="gridTag">Ambreen Khalid</div>
+        </div>
+        <div class="smallGrid">
+          <div class="circular">
+            <img src="./images/main_images/amina.jpeg" onclick="partnersModal(2)" style="height:355px; bottom: 120px;">
+          </div>
+          <div class="gridTag">Amina</div>
+        </div>
+        <div class="smallGrid">
+          <div class="circular">
+            <img src="./images/main_images/yasmeen-omar.JPG" onclick="partnersModal(3)" style="width: 470px; height: 627px; bottom: 200px; right: 130px;">
+          </div>
+          <div class="gridTag">Yasmeen Omar Asghar Khan</div>
+        </div>
+        <div class="smallGrid">
+          <div class="circular">
+            FARJAD NABI
+          </div>
+          <div class="gridTag">Farjad Nabi</div>
+        </div>
+      </div>
+      <!-- MODAL CONTENT -->
+      <div id="myModal0" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="team-modal">
+            <div class="team-img"><img src="./images/main_images/sadia-haq.jpeg" style="height: 199px"></div>
+            <div class="team-text">
+              <h3>Dr. Sadia Haq</h3>
+              Hi, I’m Dr. Sadia Haq.
+              <br style="line-height: 20px">
+              <br>
+              Life Coach & NLP Master Practitioner & Hypnotherapist.
+              <br>
+              Dental Surgeon and Clinical Nutrition aficionado.
+              <br>
+              Certificate in counselling from cpcab, UK.
+              <br>
+              Instagram: @the.holistic.doc
+              <br style="line-height: 20px">
+              <br>
+              A passionate life-long learner, who values making a positive meaningful difference in people’s lives & the world each day. Together we can work on unlocking your full potential & capacity for true self-empowerment & creating a phenomenal life that you love.
+            </div>
           </div>
         </div>
-        <div class="smallGrid">
-          <div class="circular">TEAM MEMBER 2</div>
-          <div class="gridTag">Full Name
-            <br>
-            Position</div>
+      </div>
+      <div id="myModal1" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="team-modal">
+            <div class="team-img"><img src="./images/main_images/ambreen-khalid.jpeg" style="height: 433px; position: relative; bottom: 50px;"></div>
+            <div class="team-text">
+              <h3>Ambreen Khalid</h3>
+              When people experience trauma or severe life stresses, it is not uncommon for their lives to unravel. After all, life has to crack open the heart to let the light shine through.
+              <br style="line-height: 20px;">
+              <br>
+              Ambereen’s great passion is to heal by helping align the mind, body, and soul. She realises that this cannot be a quick fix,rather, it is a life long process which needs to be nurtured with compassion.
+              <br style="line-height: 20px;">
+              <br>
+              Being a NLP master coach and a yoga meditation teacher, she helps people find their highest calling and purpose in life by changing the prism with which they look at their lives.
+              <br style="line-height: 20px;">
+              <br>
+              Mother to two amazing adult children and a gorgeous german shepherd, Ambereen’s personal mantra is:
+              Let the heart love,
+              <br>
+              the mind surrender,
+              <br>
+              and the soul breathe.
+            </div>
+          </div>
         </div>
-        <div class="smallGrid">
-          <div class="circular">TEAM MEMBER 3</div>
-          <div class="gridTag">Full Name
-            <br>
-            Position</div>
+      </div>
+      <div id="myModal2" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="team-modal">
+            <div class="team-img"><img src="./images/main_images/amina.jpeg" style="width: 150px; height: 266px; position: relative; bottom: 53px;"></div>
+            <div class="team-text">
+              <h3>Amina</h3>
+              Hi! I’m Amina. I’m a NLP Master Practitioner and Consciousness Coach. I believe that learning, growing, evolving and awakening to who we are is part of our journey here. The journey can be turbulent,
+               however we can also create beauty amidst the turbulence.
+               <br style="line-height: 20px">
+               <br>
+               The different roles life presents us can be challenging and sometimes we even get lost in them. I did. Finding the lost part of myself, becoming the creator of my journey by overcoming my negative beliefs and emotions was
+               my journey to awakening. To live a life consciously. A life that served me and people around me.
+               <br style="line-height: 20px">
+               <br>
+               Through NLP, my learnings, my stories and service as a Coach, I trust I can provide guidance and inspiration to whoever is ready to receive it. To whoever is ready to consciously create and live their life!
+               <br style="line-height: 20px">
+               <br>
+               With humility and love,
+               <br>
+               Amina.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="myModal3" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="team-modal">
+            <div class="team-img"><img src="./images/main_images/yasmeen-omar.JPG" style="width: 150px; height: 266px; position: relative; bottom: 53px;"></div>
+            <div class="team-text">
+              <h3>Yasmeen Omar Asghar Khan</h3>
+              Parental and life Coach
+              <br>
+              Certification in NLP master practitioner coach, certified master hypnotherapist and certified in timeline therapy.
+              <br style="line-height: 20px">
+              <br>
+              I believe that everyone has the power and resources to feel and experience life with purpose, passion and ease. My mission is to guide and facilitate my clients through their journey to clarity and focus, to navigate the ups and downs
+              of life. I give them tools to enhance their relationships and communication to live a more fulfilling life.
+              <br style="line-height: 20px;">
+              <br>
+              I believe that everyone has the power and resources to feel and experience life with purpose, passion and ease. My mission is to guide and facilitate my clients through their journey to clarity and focus, to navigate the ups and downs of life.
+              I give them tools to enhance their relationships and communication to live a more fulfilling life.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="myModal4" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="team-modal">
+            <div class="team-img"><img src=""></div>
+            <div class="team-text">
+              <h3>Farjad Nabi</h3>
+              Farjad is a seasoned writer and filmmaker who believes in the power of storytelling to bring about positive and lasting changes at the subconscious level. As a Master Practitioner of NLP he strives to help everyone working with him to develop a
+              better understanding, create breakthroughs and step into the most favourite version of themselves. He likes to quote CG Jung, “Until you make the unconscious conscious, it will direct your life and you will call it fate.”
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- OUR TEAM SECTION ENDS -->
 
     <!-- TESTIMONIALS SECTION -->
     <!-- <div class="testimonial-banner">
       <h1 style="margin-left: 100px;font-style: italic">"This is a testimonial"</h1>
       <h2 style="margin-left: 600px; margin-right: 30px;">-Full Name</h2>
     </div> -->
-    <h4 style="text-align: center">What our clients are saying</h4>
     <div class="testimonial-container">
+      <h4 style="text-align: center; padding-top: 90px;">What our clients are saying</h4>
       <video class="vidSlides" controls>
         <source src="./images/main_images/testimonial1.mp4" type="video/mp4">
       </video>
@@ -247,7 +300,7 @@
         </div>
       </div>
     </div>
-    <button id="to-media" class="media-btn" >View more...</buttom>
+    <button id="to-media" class="media-btn" >View more...</button>
     <script>
       document.getElementById('to-media').onclick = function() {
         location.href = "media.html";
@@ -256,4 +309,19 @@
     <!-- TESTIMONIALS SECTION ENDS -->
   </body>
 
+  <footer>
+    <div class="admin-container">
+      <img src="./images/main_images/icons/mail.png" style="width: 35px; height: 35px;">
+      <h6>admin@dynamiccommunications.com.au</h6>
+    </div>
+    <div class="admin-container" style="margin-right: 400px; ">
+      <img src="./images/main_images/icons/phone.png" style="width: 35px; height: 35px;">
+      <h6>+92 333 328 3289</h6>
+    </div>
+    <div class="socials-container">
+      <a href="https://www.facebook.com/dynamiccommunicationsconsulting" target="_blank"><img src="./images/main_images/icons/facebook.png" style="width: 35px; height: 35px; margin-right: 10px; "></a>
+      <a href="https://www.linkedin.com/in/aliyahdynamiccommunications/?originalSubdomain=pk" target="_blank"><img src="./images/main_images/icons/linkedin.png" style="width: 35px; height: 35px;margin-right: 10px; "></a>
+      <a href="https://twitter.com/dynamiccommunic" target="_blank"><img src="./images/main_images/icons/twitter.png" style="width: 35px; height: 35px; margin-right: 10px;"></a>
+    </div>
+  </footer>
 </html>
