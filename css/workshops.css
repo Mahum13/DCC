@@ -26,7 +26,6 @@ body, html {
 }
 
 .header {
-  position: fixed;
   width: 100%;
   height: 120px;
   background-color: #efedf2;
@@ -170,6 +169,81 @@ h5 {
   animation: fadeIn 3s;
 }
 
+/* MENU STARTS */
+
+.menu-items, .bottom-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 1vh;
+  position: relative;
+  background: #efedf2;
+  text-align: center;
+  padding: 0 2em;
+}
+
+.menu-items a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: "Quicksand-Medium";
+
+}
+
+/* .menu-items, .bottom-slide {
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  opacity: 0.6;
+  font-family: "Quicksand-Regular";
+} */
+
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background: #efedf2;
+  z-index: 10;
+}
+
+.menu-container--top {
+  position: fixed;
+  top: 0;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  border-right: 1px solid #e8e3e3;
+  color: #44100A;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s ease;
+  font-size: 1.2rem;
+}
+
+.item:hover {
+  color: white;
+  background-color: rgba(54, 0, 21, 0.8);
+  transition: all 0.5s ease;
+}
+
+.bottom-slider {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 6px;
+  background: #b5838d;
+  transition: left 0.3s ease;
+}
+
+/* MENU ENDS */
+
+
 h1 {
   font-family: "Quicksand-SemiBold";
   font-size: 50px;
@@ -178,15 +252,18 @@ h1 {
   bottom: 0;
 }
 
+
+
 .underline {
   border-bottom: 1px solid #6D6875;
   line-height: 1px;
 }
 
-.container {
+.container-white {
   position: relative;
   display: inline-block;
   width: 100%;
+  min-height: 800px;
 }
 
 .container-text {
@@ -240,4 +317,63 @@ h2 {
 li {
   line-height: 35px;
   padding-left: 1em;
+}
+
+
+.container-pink {
+  position: relative;
+  padding-top: 30px;
+  background-color: #f6f0f1;
+  width: 100%;
+  min-height: 800px;
+
+}
+
+footer {
+  display: block;
+  max-width: 100%;
+  min-height: 120px;
+  padding-left: 70px;
+  background-color: rgba(54, 0, 21, 0.9);
+}
+
+.contactHeading {
+  position: relative;
+  display: inline-block;
+  font-size: 29px;
+  color: white;
+  margin: 20px 10px 10px 0px;
+  font-family: "QuickSand-SemiBold";
+}
+
+.contact-container {
+  margin-top: 15px;
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  left: auto;
+  right: auto;
+  min-height: 75px;
+}
+
+.admin-container {
+  display: inline-block;
+  position: relative;
+  min-height: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+h6 {
+  display: inline;
+  position: relative;
+  bottom: 12px;
+  font-family: "Quicksand-Regular";
+  font-size: 18px;
+  color: white;
+}
+
+.socials-container {
+  display: inline-block;
+  float: right;
 }

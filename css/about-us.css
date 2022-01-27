@@ -246,7 +246,7 @@ ul {
   padding-right: 150px;
   padding-left: 150px;
   margin-top: 70px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 
@@ -263,4 +263,54 @@ h5 {
   font-size: 20px;
   color: #1c3144;
   font-style: italic;
+}
+
+footer {
+  display: block;
+  max-width: 100%;
+  min-height: 120px;
+  padding-left: 70px;
+  background-color: rgba(54, 0, 21, 0.9);
+}
+
+.contactHeading {
+  position: relative;
+  display: inline-block;
+  font-size: 29px;
+  color: white;
+  margin: 20px 10px 10px 0px;
+  font-family: "QuickSand-SemiBold";
+}
+
+.contact-container {
+  margin-top: 15px;
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  left: auto;
+  right: auto;
+  min-height: 75px;
+}
+
+
+.admin-container {
+  display: inline-block;
+  position: relative;
+  min-height: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+h6 {
+  display: inline;
+  position: relative;
+  bottom: 12px;
+  font-family: "Quicksand-Regular";
+  font-size: 18px;
+  color: white;
+}
+
+.socials-container {
+  display: inline-block;
+  float: right;
 }
