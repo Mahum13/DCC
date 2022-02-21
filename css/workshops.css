@@ -306,6 +306,68 @@ h1 {
   vertical-align: top;
 }
 
+.module-container {
+  position: relative;
+  overflow: hidden;
+  justify: center;
+  text-align: center;
+  padding: 20px 20px 10px 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.module-col {
+  position: relative;
+  display: inline-block;
+  /* float: left; */
+  width: 230px;
+  height: 270px;
+  padding: 30px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.module-rect {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 4px rgba(0,0,0,0.2);
+  background-color: rgba(191, 143, 144, 0.4);
+  text-align: center;
+}
+
+.book-btn {
+  position: relative;
+  top: 75px;
+  width: 170px;
+  height: 80px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px 4px rgba(0,0,0,0.2);
+  /* background-color: rgba(191, 143, 144, 0.4); */
+  background-color: rgba(54, 0, 21, 0.8);
+  border: none;
+  cursor: pointer;
+}
+
+h3 {
+  font-family: "Quicksand-Regular";
+  font-size: 30px;
+  color: #5b715f;
+}
+
+h4 {
+  font-family: "Quicksand-Light";
+  font-size: 20px;
+  color: #5b715f;
+}
+
 h2 {
   font-family: "Quicksand-Light";
   font-size: 35px;
@@ -322,11 +384,11 @@ li {
 
 .container-pink {
   position: relative;
+  display: inline-block;
   padding-top: 30px;
   background-color: #f6f0f1;
   width: 100%;
   min-height: 800px;
-
 }
 
 footer {

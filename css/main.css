@@ -25,6 +25,13 @@ body, html {
   src: url('./fonts/Quicksand/static/Quicksand-Light.ttf');
 }
 
+@media only screen and (max-width: 982px) {
+  .graphics1 {
+    background-attachment: local;
+    background-position: 0 top;
+  }
+}
+
 .logo {
   width: 250px;
   height: 144px;
@@ -155,28 +162,31 @@ p {
 }
 
 .intro-quote-container {
+  border: 1px solid black;
   position: relative;
   width: 100%;
-  min-height: 400px;
+  min-height: 300px;
+  padding-top: 90px;
   background-color: rgba(233, 218, 221, 0.5);
 }
 
 .intro-quote {
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-bottom: 90px;
+  border: 1px solid red;
   font-family: "Quicksand-Medium";
-  font-size: 4vh;
-  margin: 0px 90px 40px 200px;
-  padding-top: 90px;
+  font-size: 30px;
   color: #5b715f;
   font-style: italic;
+  overflow: hidden;
 }
 
 .intro-quote-author {
   position: relative;
   display: inline;
   font-family: "Quicksand-Regular";
-  font-size: 4vh;
-  margin: 40px 200px 40px 90px;
-  padding-right: 40px;
+  font-size: 30px;
   color: #5b715f;
   float: right;
 }
@@ -645,15 +655,17 @@ footer {
   display: block;
   margin-top: 170px;
   max-width: 100%;
-  min-height: 120px;
+  min-height: 300px;
   padding-left: 70px;
+  padding-right: 70px;
+  overflow: hidden;
   background-color: rgba(54, 0, 21, 0.9);
 }
 
 .contactHeading {
   /* width: 90%; */
-  position: relative;
-  display: inline-block;
+  /* position: relative; */
+  /* display: inline-block; */
   font-size: 29px;
   color: white;
   margin: 20px 10px 10px 0px;
@@ -664,12 +676,12 @@ footer {
 .contact-container {
   margin-top: 15px;
   position: relative;
-  display: inline-block;
-  width: 90%;
-  left: auto;
-  right: auto;
+  display: block;
+  /* left: auto; */
+  /* right: auto; */
   /* margin-top: 70px; */
   /* margin-left: 70px; */
+  float: left;
   min-height: 75px;
 }
 
@@ -703,13 +715,71 @@ h6 {
   color: white;
 }
 
-.socials-container {
-  /* float: right; */
-  /* position: absolute; */
-  display: inline-block;
+.signup-container {
+  background-color: rgba(233, 218, 221, 0.2);
+  max-width: 700px;
+  /* min-height: 100px; */
+  margin-bottom: 25px;
+  margin-top: 15px;
+  position: relative;
+  padding: 10px;
+  border-radius: 4px;
   float: right;
-  /* max-width: 150px; */
-  /* max-height: 50px; */
-  /* margin: 20px 30px 10px 70px; */
+  text-align: left;
+}
 
+.form-container {
+  width: inherit;
+  padding-left: 20px;
+}
+
+.field {
+  display: inline-block;
+  position: relative;
+  margin-right: 15px;
+}
+
+label {
+  font-family: "Quicksand-Regular";
+  color: white;
+  font-size: 17px;
+  display: inline-block;
+  position: relative;
+}
+
+input[type=text], input[type=number], select {
+  padding: 10px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea[type=text] {
+  font-family: sans-serif;
+  height: 90px;
+  width: 300px;
+  padding: 12px 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 200px;
+  height: 50px;
+  background-color: rgba(54, 0, 21, 0.8);
+  box-shadow: 0px 10px 10px 4px rgba(0,0,0,0.2);
+  color: white;
+  font-size: 1em;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #8a284e;
 }

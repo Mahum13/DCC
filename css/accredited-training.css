@@ -25,6 +25,13 @@ body, html {
   src: url('./fonts/Quicksand/static/Quicksand-Light.ttf');
 }
 
+@media only screen and (max-width: 982px) {
+  .graphics1 {
+    background-attachment: local;
+    background-image: url('../images/accredited_images/accredited-training.jpg');
+  }
+}
+
 .header {
   width: 100%;
   height: 120px;
@@ -136,9 +143,10 @@ h5 {
 }
 
 .graphics1 {
+  display: inline-block;
   position: relative;
   min-width: 100%;
-  height: 870px;
+  min-height: 870px;
   z-index: -100;
   background-image: url('../images/accredited_images/accredited-training.jpg');
   filter: blur(3px);
@@ -151,21 +159,19 @@ h5 {
 }
 
 .tagline {
-  min-height: 90px;
+  /* min-height: 90px; */
   max-width: 100%;
   padding: 15px 20px 15px 20px;
-  /* background-color: #f2f0f0; */
   background-color: rgba(54, 0, 21, 0.8);
   border-radius: 2px;
   position: absolute;
   text-align: center;
   font-size: 3em;
-  /* color: #1c3144; */
-  margin-right: 20px;
+  /* margin-right: 20px; */
   color: white;
   font-family: "Quicksand-Medium";
   opacity: 1.0;
-  top: 45%;
+  top: 500px;
   right: 25%;
   left: 25%;
   animation: fadeIn 3s;
@@ -284,7 +290,7 @@ h2 {
   float: left;
   max-width: 530px;
   min-height: 530px;
-  margin: 90px 130px 20px 150px;
+  margin: 90px 140px 20px 150px;
 
 }
 
