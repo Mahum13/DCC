@@ -30,6 +30,8 @@ function resizeNavbar() {
   }
 }
 
+
+
 class StickyNavigation {
   constructor() {
     this.currentId = null;
