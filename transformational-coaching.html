@@ -8,7 +8,7 @@
     <script language="JavaScript" type="text/javascript" src="js/accredited-training.js"></script>
     <title>Transformational Coaching - Dynamic Communications</title>
     <div class="header">
-      <div class="logo"></div>
+      <a href="index.html"><div class="logo"></div></a>
 
       <!-- NAVBAR -->
       <div class="navbar">
@@ -95,38 +95,51 @@
     <div class="booking-container">
       <h3 style="padding: 0px;">Book an appointment</h3>
       <div class="form-container">
-        <form action="/action_page.php">
-          <label for="fname">Full Name</label>
+        <form action="php/insert.php" method="post">
+          <div class="field">
+            <label for="fname">First Name</label>
+            <br>
+            <input type="text" id="fname" name="firstname" placeholder="First Name...">
+          </div>
+          <div class="field">
+            <label for="fname">Last Name</label>
+            <br>
+            <input type="text" id="lname" name="lastname" placeholder="Last Name...">
+          </div>
+          <br style="line-height: 10px;">
           <br>
-          <input type="text" id="fname" name="fullname" placeholder="Full Name...">
-          <br style="line-height: 20px;">
+          <div class="field">
+            <label for="email">Email Address</label>
+            <br>
+            <input type="text" id="email" name="email" placeholder="Email...">
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <br>
+            <input type="text" id="phone" name="phone" placeholder="Phone...">
+          </div>
+          <br style="line-height: 10px">
           <br>
-          <label for="email">Email Address</label>
+          <div class="field">
+            <label for="city">City</label>
+            <br>
+            <input type="text" id="city" name="city" placeholder="City...">
+          </div>
+          <div class="field">
+            <label for="country">Country</label>
+            <br>
+            <input type="text" id="country" name="country" placeholder="Country...">
+          </div>
+          <br style="line-height: 10px;">
           <br>
-          <input type="text" id="email" name="email" placeholder="Email...">
-          <br style="line-height: 20px;">
+          <div class="field">
+            <label for="message">Message</label>
+            <br>
+            <textarea maxlength="100" type="text" id="message" name="message" placeholder="In a few words, please share what you want coaching in..."></textarea>
+          </div>
+          <br style="line-height: 10px">
           <br>
-          <label for="phone">Phone</label>
-          <br>
-          <input type="number" id="phone" name="phone" placeholder="Phone...">
-          <br style="line-height: 20px;">
-          <br>
-          <label for="city">City</label>
-          <br>
-          <input type="text" id="city" name="city" placeholder="City...">
-          <br style="line-height: 20px;">
-          <br>
-          <label for="country">Country</label>
-          <br>
-          <input type="text" id="country" name="country" placeholder="Country...">
-          <br style="line-height: 20px;">
-          <br>
-          <label for="country">Message</label>
-          <br>
-          <textarea maxlength="100" type="text" id="message" name="message" placeholder="In a few words, please share what you want coaching in..."></textarea>
-          <br style="line-height: 20px">
-          <br>
-          <input type="submit" value="Submit">
+          <input name="submit-contact" type="submit" value="Submit" />
 
         </form>
       </div>
